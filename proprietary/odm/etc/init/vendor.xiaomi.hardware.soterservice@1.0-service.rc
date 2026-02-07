@@ -1,8 +1,0 @@
-service vendor.mitee.soterservice /odm/bin/soterd
-    class hal
-    user system
-    group system
-    disabled
-
-on property:sys.boot_completed=1
-    start vendor.mitee.soterservice
